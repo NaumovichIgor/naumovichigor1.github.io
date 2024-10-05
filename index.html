@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>...</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+<script src="script.js"></script>
+</head>
+<body>
+    <ul>
+        <li><a href="http://kubsu.ru/">ссылка на глав страницу кубгу</a></li>
+        <li><a href="https://www.kubsu.ru/">абсолютная ссылка на главную сайта kubsu.ru в протоколе https</a></li>
+        <li><a href="https:kubsu.ru/taxonomy/term/12">Link to internal page</a></li>
+        <li><a href="#">Ссылка с пустым href</a></li>
+        <li><a>Ссылка без href</a></li>
+        <li><p>Это абзац текста содержащий <a href="https://kubsu.ru">ссылку на страницу</a> в себе.</p></li>
+        <li><a href="http://kubsu.ru/"><img src="image.jpg" alt="здесь должна быть фотография" style="width: 600px;"></a></li>
+        <li><a href="#fragment-id">ссылка на фрагмет текущей страницы</a></li>
+        <li><a href="https://kubsu.ru/ru/sveden">КубГу</a></li>
+        <li><a href="https://kubsu.ru/" rel="nofollow">ссылка запрещенная для индексации поисковиками</a></li>
+    </ul>
+    <form action="/" method="POST">
+
+        <label>
+            ФИО:<br>
+            <input name="field-name-1" value="Ваше ФИО">
+        </label><br>
+
+        <label>
+            Номер телефона:<br>
+            <input name="field-name-2" value="Ваш номер телефона">
+        </label><br>
+
+        <label>
+            email:<br>
+            <input name="field-email" type="email" placeholder="Ваша почта">
+        </label><br>
+
+        <label>
+            Ваша дата рождения:<br>
+            <input name="field-date" value="2005-01-01" type="date">
+        </label><br>
+
+        Пол:<br>
+        <label>
+            <input type="radio" checked="checked" name="radio-group-1" value="Значение1">
+            Муж.
+        </label>
+        <label>
+            <input type="radio" name="radio-group-2" value="Значение2">
+            Жен.
+        </label><br>
+
+        <label>
+            Ваш любимый язык программирования:
+            <br>
+            <select name="field-name-3[]" multiple="multiple">
+                <option value="Метка1" selected="selected">Pascal</option>
+                <option value="Метка2">C</option>
+                <option value="Метка3">C++</option>
+                <option value="Метка1">JavaScript</option>
+                <option value="Метка1">PHP</option>
+                <option value="Метка1">Python</option>
+                <option value="Метка1">Java</option>
+                <option value="Метка1">Haskel</option>
+                <option value="Метка1">Clojure</option>
+                <option value="Метка1">Prolog</option>
+                <option value="Метка1">Scala</option>
+            </select>
+        </label><br>
+
+        <label>
+            Ваша биография:<br>
+            <textarea name="field-name-4">Напишите про себя :)</textarea>
+        </label><br>
+
+        С контрактом ознакомлен:<br>
+        <label>
+            <input type="checkbox" checked="checked" name="check-1">
+            Подпись чекбокса ставим справа
+        </label><br>
+
+        <input type="submit" value="Отправить">
+    </form>
+    <section id="fragment-id">
+        <p>Это часть на которую ведет ссылка</p>
+    </section>
+</body>
+</html>
