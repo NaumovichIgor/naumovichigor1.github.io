@@ -15,11 +15,21 @@
   <li><a href="#fragment-id">ссылка на фрагмет текущей страницы</a></li>
   <li><a href="https://example.com/page?param1=value1&param2=value2&param3=value3">ссылка с тремя параметрами URL</a></li>
   <li><a href="https://example.com/page?id=123">ссылка с параметром id в URL</a></li>
-  <li><a href="current-page.html">Relative Link to Current Directory</a></li>
+  <li><a href="current-page.html">относительная ссылка на страницу в текущем</a></li>
+  <li><a href="about/about-page.html">относительная ссылка на страницу в каталоге about</a></li>
+  <li><a href="../parent-page.html">относительная ссылка на страницу в каталоге уровнем выше предыдущего</a></li>
+  <li><a href="../../two-levels-above.html">относительная ссылка на страницу в каталоге двумя уровнями выше</a></li>
+  <li><p>Это абзац текста содержащий <a href="https://kubsu.ru">ссылку на страницу</a> в себе.</p></li>
+  <li><a href="https://kubsu.ru#main-content">ссылка на фрагмент страницы стороннего сайта</a></li>
+  <li>
+    <map name="image-map">
+      <area shape="rect" coords="34,44,270,350" href="https://example.com/rect" alt="Rectangular Area">
+      <area shape="circle" coords="337,300,44" href="https://example.com/circle" alt="Circular Area">
+      <img src="image.jpg" alt="Image Map" usemap="#image-map">
+    </map>
+  </li>
   <li><a href="#">Ссылка с пустым href</a></li>
   <li><a>Ссылка без href</a></li>
-  <li><p>Это абзац текста содержащий <a href="https://kubsu.ru">ссылку на страницу</a> в себе.</p></li>
-
   <li><a href="https://kubsu.ru/ru/sveden">КубГу</a></li>
   <li><a href="https://kubsu.ru/" rel="nofollow">ссылка запрещенная для индексации поисковиками</a></li>
 </ul>
